@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Danh sách môn học yêu thích</title>
+</head>
+<body>
+    <h1>Danh sách các môn học yêu thích</h1>
+
+    <ul>
+        <li>Toán học</li>
+        <li>Vật lý</li>
+        <li>Công nghệ thông tin</li>
+        <li>Hóa học</li>
+        <li>Tiếng Anh</li>
+    </ul>
+
+</body>
+</html>
