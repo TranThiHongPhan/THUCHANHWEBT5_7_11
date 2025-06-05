@@ -1,0 +1,27 @@
+<DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Giới thiệu bản thân</title>
+</head>
+<body>
+    <h1>Giới thiệu bản thân</h1>
+
+    <h2>Nguyễn Văn A</h2>
+    <img src="https://picsum.photos/id/237/200/300" alt="Ảnh đại diện" style="width: 150px; height: 150px; border-radius: 50%;">
+
+    <p><strong>Ngày sinh:</strong> 01/01/1990</p>
+
+    <h3>Mô tả ngắn:</h3>
+    <p>Chào các bạn, tôi là Nguyễn Văn A, một người yêu thích công nghệ và sáng tạo. Tôi luôn tìm kiếm những cơ hội để học hỏi và phát triển bản thân.</p>
+
+    <h3>Sở thích:</h3>
+    <ul>
+        <li>Đọc sách</li>
+        <li>Chơi thể thao</li>
+        <li>Lập trình web</li>
+        <li>Du lịch</li>
+    </ul>
+</body>
+</html>
