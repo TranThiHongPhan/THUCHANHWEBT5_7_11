@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thời khóa biểu</title>
+    <style>
+        table {
+            width: 80%;
+            margin: 20px auto;
+            border-collapse: collapse;
+            text-align: center;
+        }
+        th, td {
+            padding: 10px;
+            border: 1px solid #ddd;
+        }
+        th {
+            background-color: #4CAF50;
+            color: white;
+        }
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center;">Thời khóa biểu</h1>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Thứ</th>
+                <th>Môn học</th>
+                <th>Giờ học</th>
+                <th>Phòng học</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Thứ 2</td>
+                <td>Toán học</td>
+                <td>08:00 - 10:00</td>
+                <td>Phòng 101</td>
+            </tr>
+            <tr>
+                <td>Thứ 3</td>
+                <td>Vật lý</td>
+                <td>10:00 - 12:00</td>
+                <td>Phòng 102</td>
+            </tr>
+            <tr>
+                <td>Thứ 4</td>
+                <td>Công nghệ thông tin</td>
+                <td>14:00 - 16:00</td>
+                <td>Phòng 103</td>
+            </tr>
+            <tr>
+                <td>Thứ 5</td>
+                <td>Hóa học</td>
+                <td>08:00 - 10:00</td>
+                <td>Phòng 104</td>
+            </tr>
+            <tr>
+                <td>Thứ 6</td>
+                <td>Tiếng Anh</td>
+                <td>10:00 - 12:00</td>
+                <td>Phòng 105</td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+</html>
