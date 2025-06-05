@@ -1,0 +1,34 @@
+<DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Document</title>
+
+    </head> 
+    <body> 
+        <h1>FORM ĐĂNG KÝ THÔNG TIN CÁ NHÂN</h1> 
+        <form> 
+            <table >
+                <tr>
+                    <th>Content</th>
+                    <th>Tags</th>
+                 </tr> 
+                 <tr>
+                    <td>Tên:</th>
+                    <td><input type="text"></th>
+                 </tr> 
+                 <tr>
+                    <td>Email:</th>
+                    <td><input type="text"></th>
+                 </tr> 
+
+            </table>
+            <div></div> 
+            <div></div> 
+            <div>Số điện thoại: <input type="text"></div> 
+            Giới tính: Nam <input type="checkbox" name=""id=""> Nữ <input type="checkbox" name=""id="">
+            <input type="button" value="Nút gửi"> 
+        </form> 
+</body> 
+</html>
