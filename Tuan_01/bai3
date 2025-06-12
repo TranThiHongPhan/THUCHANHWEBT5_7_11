@@ -1,74 +1,48 @@
 <!DOCTYPE html>
-<html lang="vi">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Thời khóa biểu</title>
-    <style>
-        table {
-            width: 80%;
-            margin: 20px auto;
-            border-collapse: collapse;
-            text-align: center;
-        }
-        th, td {
-            padding: 10px;
-            border: 1px solid #ddd;
-        }
-        th {
-            background-color: #4CAF50;
-            color: white;
-        }
-        tr:nth-child(even) {
-            background-color: #f2f2f2;
-        }
-    </style>
+    <title>Document</title>
 </head>
 <body>
-    <h1 style="text-align: center;">Thời khóa biểu</h1>
+    <table border="1">
+    <thead>
+        <tr>
+            <th>Thứ</th>
+            <th>Môn học</th>
+            <th>Giờ học</th>
+            <th>Phòng học</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Thứ Hai</td>
+            <td>Tiếng Anh </td>
+            <td>17:45 - 18:00</td>
+            <td>Phòng 201</td>
+        </tr>
+        <tr>
+            <td>Thứ Ba</td>
+            <td>Tin Học</td>
+            <td>18:00 - 21:00</td>
+            <td>Phòng B1.01</td>
+        </tr>
+        <tr>
+            <td>Thứ Tư</td>
+            <td>Hệ thống công nghệ Web</td>
+            <td>10:30 - 12:00</td>
+            <td>Phòng N6.2</td>
+        </tr>
+        <tr>
+            <td>Thứ Năm</td>
+            <td>Kiểm soát nội bộ</td>
+            <td>6:30 - 9:10</td>
+            <td>Phòng N4.2</td>
+        </tr>
+    </tbody>
+</table>
 
-    <table>
-        <thead>
-            <tr>
-                <th>Thứ</th>
-                <th>Môn học</th>
-                <th>Giờ học</th>
-                <th>Phòng học</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>Thứ 2</td>
-                <td>Toán học</td>
-                <td>08:00 - 10:00</td>
-                <td>Phòng 101</td>
-            </tr>
-            <tr>
-                <td>Thứ 3</td>
-                <td>Vật lý</td>
-                <td>10:00 - 12:00</td>
-                <td>Phòng 102</td>
-            </tr>
-            <tr>
-                <td>Thứ 4</td>
-                <td>Công nghệ thông tin</td>
-                <td>14:00 - 16:00</td>
-                <td>Phòng 103</td>
-            </tr>
-            <tr>
-                <td>Thứ 5</td>
-                <td>Hóa học</td>
-                <td>08:00 - 10:00</td>
-                <td>Phòng 104</td>
-            </tr>
-            <tr>
-                <td>Thứ 6</td>
-                <td>Tiếng Anh</td>
-                <td>10:00 - 12:00</td>
-                <td>Phòng 105</td>
-            </tr>
-        </tbody>
-    </table>
 
 </body>
 </html>
