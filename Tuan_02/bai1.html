@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giới Thiệu Bản Thân</title>
+   <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #ff6b9d 0%, #c44569 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .container {
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 20px;
+            padding: 40px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            max-width: 600px;
+            width: 100%;
+            backdrop-filter: blur(10px);
+        }
+
+        .profile-image {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 5px solid #ff6b9d;
+            margin: 0 auto 30px;
+            object-fit: cover;
+            background: linear-gradient(45deg, #ff6b9d, #c44569);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 60px;
+            color: white;
+            box-shadow: 0 10px 30px rgba(255, 107, 157, 0.3);
+        }
+
+        h1 {
+            color: #333;
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+
+        .subtitle {
+            color: #ff6b9d;
+            font-size: 1.2em;
+            margin-bottom: 30px;
+            font-weight: 500;
+        }
+
+        .info-section {
+            background: #fff0f5;
+            border-radius: 15px;
+            padding: 25px;
+            margin: 20px 0;
+            border-left: 5px solid #ff6b9d;
+        }
+
+        .info-section h3 {
+            color: #333;
+            margin-bottom: 15px;
+            font-size: 1.3em;
+        }
+
+        .info-section p {
+            color: #666;
+            line-height: 1.6;
+            font-size: 1.1em;
+        }
+
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: center;
+            margin-top: 15px;
+        }
+
+        .skill-tag {
+            background: linear-gradient(45deg, #667eea, #764ba2);
+            color: white;
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-size: 0.9em;
+            font-weight: 500;
+        }
+
+        .contact-info {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .contact-item {
+            background: white;
+            border-radius: 12px;
+            padding: 15px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            flex: 1;
+            min-width: 150px;
+        }
+
+        .contact-item strong {
+            color: #667eea;
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .hobbies-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+            gap: 15px;
+            margin-top: 15px;
+        }
+
+        .hobby-item {
+            background: white;
+            border-radius: 10px;
+            padding: 15px;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .hobby-item:hover {
+            transform: translateY(-5px);
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 30px 20px;
+            }
+            
+            h1 {
+                font-size: 2em;
+            }
+            
+            .contact-info {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="profile-image"> 
+            <img src="image/avt.jpg" alt="Profile Image" style="width: 100%; height: 100%; border-radius: 50%;">
+            
+        </div>
+        
+        <h1>Trần Thị Hồng Phấn</h1>
+        <p class="subtitle">Sinh viên Thương mại điện tử</p>
+        
+        <div class="info-section">
+            <h3>Về tôi</h3>
+            <p>Xin chào! Tôi là một sinh viên năm 3 chuyên ngành Thương mại điện tử, đại học Công Nghiệp thành phố Hồ Chí Minh. 
+               Tôi đam mê lập trình web và luôn háo hức học hỏi những công nghệ mới. 
+               Mục tiêu của tôi là trở thành một lập trình viên full-stack chuyên nghiệp.</p>
+        </div>
+
+        <div class="info-section">
+            <h3>Kỹ năng</h3>
+            <div class="skills">
+                <span class="skill-tag">HTML/CSS</span>
+                <span class="skill-tag">JavaScript</span>
+                <span class="skill-tag">Python</span>
+                <span class="skill-tag">Java</span>
+                <span class="skill-tag">MySQL</span>
+                <span class="skill-tag">Git</span>
+            </div>
+        </div>
+
+        <div class="info-section">
+            <h3>Thông tin liên hệ</h3>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <strong>Email</strong>
+                    phantran16011412@gmail.com
+                </div>
+                <div class="contact-item">
+                    <strong>Số điện thoại</strong>
+                    0854748497
+                </div>
+                <div class="contact-item">
+                    <strong>Địa chỉ</strong>
+                    12 Nguyễn Văn Bảo, Phường 1, Quận Gò Vấp, TP HCM, Việt Nam
+                </div>
+            </div>
+        </div>
+
+        <div class="info-section">
+            <h3>Sở thích</h3>
+            <div class="hobbies-list">
+                <div class="hobby-item">🎵 Nghe nhạc</div>
+                <div class="hobby-item">📚 Đọc sách</div>
+                <div class="hobby-item">✈️ Du lịch</div>
+                <div class="hobby-item">🎬 Xem phim</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
