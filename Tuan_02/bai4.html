@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Đăng Ký Thông Tin</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #ff6b9d, #c44569);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .form-container {
+            background: white;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+            max-width: 500px;
+            width: 100%;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 30px;
+            font-size: 24px;
+    
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        input[type="text"] {
+            width: calc(100% - 20px);
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        input[type="button"] {
+            background-color: #ff6b9d;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        input[type="button"]:hover {
+            background-color: #c44569;
+        }
+        
+
+    </style>
+</head>
+<body>
+    <div class="form-container">
+
+        <h1>FORM ĐĂNG KÝ THÔNG TIN CÁ NHÂN</h1> 
+        <form> 
+            <table >
+                <tr>
+                    <th>Content</th>
+                 </tr> 
+                 <tr>
+                    <td>Tên:</td>
+                    <td><input type="text"></td>
+                 </tr> 
+                 <tr>
+                    <td>Email:</td>
+                    <td><input type="text"></td>
+                 </tr> 
+
+            </table>
+            <div></div> 
+            <div></div> 
+            <div>Số điện thoại: <input type="text"></div> 
+            Giới tính: Nam <input type="checkbox" name=""id=""> Nữ <input type="checkbox" name=""id="">
+            <input type="button" value="Gửi"> 
+        </form> 
+</body> 
+</html>
