@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Trang giới thiệu bản thân</title>
+    <style>
+        .container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            align-items: center;
+            height: 100vh;
+            background-color: #f1d7ed;
+        }
+        .item{
+            padding: 20px;
+            border: 1px solid #b84444;
+            margin: 10px;
+            text-align: center;
+        }
+        .profile {
+            display: flex;
+            align-items: center;
+            padding: 20px;
+            border: 2px solid #000000;
+            background-color: #f0a4df;
+            margin: 10px;
+        }
+        .avatar {
+            width: 300px;
+            height: 200px;
+            border-radius: 30%;
+            margin-right: 10px;
+        }   
+        .info ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        @media (max-width: 800px) {
+        .flex-container {
+        flex-direction: column;
+        align-items: center;}
+        .avatar {
+            width: 200px;
+            height: 150px;
+            border-radius: 50%;
+        }
+        .info {
+            text-align: center;
+        }   
+        }
+        
+    </style>
+</head>
+<body> 
+    <div class="container">
+        <div class="container">
+            <div class="profile">
+              <img src="image/avt.jpg" alt="Ảnh đại diện" class="avatar" />
+              <div class="info">
+                <h1>Trần Thị Hồng Phấn</h1>
+                <p>Sinh viên đam mê thiết kế web và công nghệ mới. 
+                   Yêu thích học hỏi và chia sẻ kiến thức.</p>
+                <ul>
+                  <li>📧 Email: phantran16011412@gmail.com</li>
+                  <li>📍 Địa chỉ: 12 Nguyễn Văn Bảo, Gò Vấp, Việt Nam</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        
+</body>
