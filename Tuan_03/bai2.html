@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Danh sách các môn học yêu thích</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0px;
+            padding: 20px;
+            background-color: #f8f9fa;
+        }
+
+         .grid-container {
+           display: grid;
+           grid-template-columns: 1fr 1fr ;
+           margin-bottom: 350px;
+        }
+        .grid-item {
+            padding: 20px;
+            border: 1px solid #b84444;
+            margin: 10px;
+            text-align: center;
+            background-color: #f0a4df;
+            border-radius: 10px;
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            align-items: center;
+            height: 100vh;
+            background-color: #f1d7ed;
+        }
+
+        .grid-item:hover {
+            background-color: #f8c0e0;
+            transform: scale(1.05);
+            transition: background-color 0.3s, transform 0.3s;
+        }
+        h1 {
+            width: 100%;
+            padding: 20px;
+            text-align: center;
+            color: #b84444;
+        }
+        @media (max-width: 800px) {
+            .grid-container {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+        @media (max-width: 500px) {
+            .grid-container {
+                grid-template-columns: 1fr;
+            }
+            .grid-item {
+                font-size: 14px;
+                padding: 10px;
+            }
+        }
+        
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Danh sách các môn học yêu thích</h1>
+        <div class="grid-container">
+            <div class="grid-item">Marketing số</div>
+            <div class="grid-item">Kiểm soát nội bộ</div>
+            <div class="grid-item">Cơ sở dữ liệu</div>
+            <div class="grid-item">Kỹ năng giao tiếp</div>
+            <div class="grid-item">Nhập môn lập trình</div>
+            <div class="grid-item">Quản trị nguồn nhân lực</div>
+
+
+    </div>
+
+    </div>
+
+    
+    
