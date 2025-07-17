@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    function checkInput() {
+        var input = document.getElementById("myInput").value;
+        if (!isNaN(input)) {
+            console.log("Đây là một số: " + input);
+        } else {
+            console.log("Đây là một chuỗi: " + input);
+        }
+    }
+</script>
+<body>
+    <h1>Input số hoặc chuỗi</h1>
+    <input type="text" id="myInput" placeholder="Nhập số hoặc chuỗi">
+    <button onclick="checkInput()">Kiểm tra</button>
+</body>
+</html>

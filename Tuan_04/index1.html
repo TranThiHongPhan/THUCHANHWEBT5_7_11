@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Your Name</h2>
+    <input type = "text" id="myInput" placeholder = "nhập tên của bạn">
+    <button onclick="hello()">Click me</button>
+
+    <script>
+        function hello() {
+            var name = document.getElementById("myInput").value;
+            console.log("Hello " + name);
+        }
+    </script>
+</body>
+</html>

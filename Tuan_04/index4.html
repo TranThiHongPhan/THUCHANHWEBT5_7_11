@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    function nhap () {
+        var name = document.getElementById("myInput").value;
+        console.log("Hello " + name);
+        if (name === "") {
+            alert("Vui lòng nhập tên của bạn.");
+        } else {
+            localStorage.setItem("name", name);
+            document.getElementById("myName").textContent = `Xin chào, ${name}`;
+        }
+    }
+</script>
+<body>
+    <h1 id="myName">Hãy nhập tên của bạn!</h1>
+    <input type="text" id="myInput" placeholder="Nhập tên của bạn">
+    <button onclick="nhap()">OK</button>
+</body>
+</html>
