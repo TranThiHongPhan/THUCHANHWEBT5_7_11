@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="Ten"></h1>
+    <input id="Hovaten" type="text" placeholder="Nhập họ và tên">
+    <button onclick="Ten()" >Click</button>
+    <script>
+        function Ten() {
+            var name = document.getElementById("Hovaten").value
+            localStorage.setItem("name", name);
+            document.getElementById("Ten").textContent = "Hello "+ name;
+        }
+    </script>
+    
+</body>
+</html>
