@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kiểm tra số</title>
+  <style>
+    .error {
+      color: red;
+    }
+    .success {
+      color: green;
+    }
+  </style>
+</head>
+<body>
+  <input id="nhapso" type="number" placeholder="Hãy nhập số">
+  <button onclick="checkSo()">Check</button>
+  <p id="result"></p>
+
+  <script>
+    function checkSo() {
+      var a = document.getElementById("nhapso").value;
+      var ketqua = document.getElementById("result");
+      if (a == "") {
+        ketqua.textContent = "Please input";
+        ketqua.className = "error";
+      } else {
+        ketqua.textContent = "OK";
+        ketqua.className = "success";
+      }
+    }
+  </script>
+</body>
+</html>
