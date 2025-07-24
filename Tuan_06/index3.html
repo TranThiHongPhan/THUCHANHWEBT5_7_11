@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .error {
+        background-color: red;
+    }
+    
+    .success {
+        background-color: green;
+    }
+</style>
+
+<body>
+    <input type="text" id="nhapmatkhau" placeholder="Nhập mật khẩu mạnh">
+    <button onclick="matkhaumanh()">Check</button>
+    <p id="result"></p>
+    <script>
+        function matkhaumanh() {
+            var password = document.getElementById("nhapmatkhau").value;
+            var result = document.getElementById("result");
+            var regex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[^A-Za-z\d])[A-Za-z\d\S]{8,}$/;
+            if (regex.test(password)) {
+                result.innerText = "Mật khẩu OK"
+                result.className = "success"
+            } else {
+                result.innerText = "Mật khẩu không OK "
+                result.className = "error"
+            }
+
+        }
+    </script>
+</body>
+
+</html>
