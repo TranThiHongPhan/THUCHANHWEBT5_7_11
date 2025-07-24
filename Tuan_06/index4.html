@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .error {
+        background-color: red;
+    }
+    
+    .success {
+        background-color: green;
+    }
+</style>
+
+<body>
+    <input type="text" id="nhapemail" placeholder="Nhập email">
+    <button onclick="kiemtraemail()">Check</button>
+    <p id="result"></p>
+    <script>
+        function kiemtraemail() {
+            var email = document.getElementById("nhapemail").value;
+            var result = document.getElementById("result");
+            var regex = /[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?/g;
+            if (regex.test(email)) {
+                result.innerText = "Email OK"
+                result.className = "success"
+            } else {
+                result.innerText = "Email không OK"
+                result.className = "error"
+            }
+        }
+    </script>
+</body>
+
+</html>
