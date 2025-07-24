@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <input id="ngaysinh" type="date">
+    <button id="check">check</button>
+    <p id="result"></p>
+
+    <script>
+        document.getElementById("check").onclick = function () {
+            var mybirthday = document.getElementById("ngaysinh").value;
+            var mydate = new Date();
+            var result = document.getElementById("result");
+
+            var birth = new Date(mybirthday);
+            var age = mydate.getFullYear() - birth.getFullYear();
+            console.log(age);
+
+            if (age >= 18) {
+                result.textContent = age;
+            } else {
+                result.textContent = "Chỉ chấp nhận từ 18 tuổi trở lên";
+            }
+        }
+    </script>
+</body>
+</html>
