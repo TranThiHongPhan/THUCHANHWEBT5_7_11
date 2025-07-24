@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <input id="inputdate" type="date">
+    <button id="Print">Print</button>
+    <p id="result"></p>
+
+    <script>
+        var inputdate = document.getElementById("inputdate");
+        var mydate = new Date();
+        var result = document.getElementById("result");
+
+        document.getElementById("Print").onclick = function () {
+            var myselfdate = new Date(inputdate.value);
+            console.log("Ngày hiện tại:", mydate);
+            console.log("Ngày được chọn:", myselfdate);
+            console.log(mydate < myselfdate);
+
+            if (mydate < myselfdate) {
+                result.textContent = "Ngày trong tương lai";
+                console.log("Ngày trong tương lai");
+            } else if (mydate > myselfdate) {
+                result.textContent = "Ngày trong quá khứ";
+                console.log("Ngày trong quá khứ");
+            } else {
+                result.textContent = "Ngày hôm nay";
+                console.log("Ngày hôm nay");
+            }
+        }
+    </script>
+</body>
+</html>
